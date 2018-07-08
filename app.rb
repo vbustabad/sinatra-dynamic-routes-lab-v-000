@@ -25,8 +25,8 @@ class App < Sinatra::Base
     array = []
 
     array = params[:word1].gsub(/""/, "")/params[:word2].gsub(/""/, "")/params[:word3].gsub(/""/, "")/params[:word4].gsub(/""/, "")/params[:word5].gsub(/""/, "")
-    string_of_words.gsub("/", " ")
     binding.pry
+    string_of_words.gsub("/", " ")
   end
 
   get '/:operation/:number1/:number2' do
