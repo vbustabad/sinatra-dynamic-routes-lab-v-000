@@ -14,10 +14,12 @@ class App < Sinatra::Base
 
   get '/say/:number/:phrase' do
     array = []
+    
     params[:number].to_i.times do
       array << params[:phrase]
     end
     array.join
+    binding.pry
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
