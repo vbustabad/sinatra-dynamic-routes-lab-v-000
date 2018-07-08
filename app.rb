@@ -25,7 +25,11 @@ class App < Sinatra::Base
     array = []
 
     binding.pry
-    array << params[:word1], params[:word2], params[:word3], params[:word4], params[:word5]
+    array << params[:word1]
+    array << params[:word2] 
+    array << params[:word3] 
+    array << params[:word4] 
+    array << params[:word5]
     array.join(" ")
   end
 
