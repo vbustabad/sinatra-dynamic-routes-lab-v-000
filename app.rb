@@ -30,7 +30,7 @@ class App < Sinatra::Base
     array << params[:word4]
     array << params[:word5]
     array
-    array.push(".")
+    array.join(" ")
   end
 
   get '/:operation/:number1/:number2' do
