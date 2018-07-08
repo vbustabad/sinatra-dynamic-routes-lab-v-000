@@ -25,7 +25,7 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
     case params[:operation]
-    when params[:add] 
+    when params[:add]
       params[:number1].to_i + params[:number2].to_i
     when params[:subtract]
       params[:number1].to_i - params[:number2].to_i
@@ -33,7 +33,7 @@ class App < Sinatra::Base
       params[:number1].to_i * params[:number2].to_i
     when params[:divide]
       params[:number1].to_i / params[:number2].to_i
-    end 
+    end
   end
 
 end
