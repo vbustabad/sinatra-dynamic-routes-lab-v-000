@@ -23,7 +23,7 @@ class App < Sinatra::Base
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     array = []
-    
+
     array = params[:word1].gsub(/""/, "")/params[:word2].gsub(/""/, "")/params[:word3].gsub(/""/, "")/params[:word4].gsub(/""/, "")/params[:word5].gsub(/""/, "")
     string_of_words.gsub("/", " ")
     binding.pry
