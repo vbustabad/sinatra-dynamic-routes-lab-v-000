@@ -18,7 +18,7 @@ class App < Sinatra::Base
     params[:number].to_i.times do
       array << params[:phrase]
     end
-    array.join(",")
+    array.join(" , ")
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
