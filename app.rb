@@ -13,13 +13,13 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
+    binding.pry
     params[:number].to_i.times do
       params[:phrase]
     end
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    binding.pry
     string_of_words = "params[:word1].gsub(/""/, "")/params[:word2].gsub(/""/, "")/params[:word3].gsub(/""/, "")/params[:word4].gsub(/""/, "")/params[:word5].gsub(/""/, "")."
     string_of_words.gsub("/", " ")
   end
